@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.59" >
+
+        <TextView
+            android:id="@+id/ProfileName:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="58dp"
+            android:text="ProfileName:" />
+
+        <TextView
+            android:id="@+id/Address:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ProfileName:"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="30dp"
+            android:text="Address:" />
+
+        <TextView
+            android:id="@+id/LatLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/Address:"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="27dp"
+            android:text="Lat/Long:" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ProfileName:"
+            android:layout_marginLeft="37dp"
+            android:layout_toRightOf="@+id/ProfileName:"
+            android:ems="10" />
+
+        <CheckBox
+            android:id="@+id/ReminderCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/VibrateCB"
+            android:layout_alignBottom="@+id/VibrateCB"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_reminder" />
+
+        <Button
+            android:id="@+id/getcurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/OK"
+            android:layout_alignBottom="@+id/OK"
+            android:layout_alignLeft="@+id/seekBar1"
+            android:text="Get Current Location" />
+
+        <TextView
+            android:id="@+id/addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Address:"
+            android:layout_alignBottom="@+id/Address:"
+            android:layout_alignLeft="@+id/editText1"
+            android:text="Address...." />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/OK"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="49dp" />
+
+        <TextView
+            android:id="@+id/lati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/LatLong"
+            android:layout_alignBottom="@+id/LatLong"
+            android:layout_alignRight="@+id/addr"
+            android:text="13.134559" />
+
+        <CheckBox
+            android:id="@+id/VibrateCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekBar1"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="17dp"
+            android:drawableLeft="@drawable/ic_vibrate" />
+
+        <TextView
+            android:id="@+id/lng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lati"
+            android:layout_below="@+id/lati"
+            android:layout_marginTop="22dp"
+            android:text="12.127879" />
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:layout_toRightOf="@+id/lng"
+            android:text="OK" />
+
+        <CheckBox
+            android:id="@+id/SilentCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ReminderCB"
+            android:layout_alignBottom="@+id/ReminderCB"
+            android:layout_alignRight="@+id/Address:"
+            android:drawableLeft="@drawable/ic_silent" />
+
+    </RelativeLayout>
+
+</LinearLayout>
